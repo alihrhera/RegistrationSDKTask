@@ -110,9 +110,7 @@ class RegisterCameraStepScreenViewModel @Inject constructor(
                     timer?.cancel()
                     updateEvent(RegisterCameraUiState.Success)
                 }
-
             }
-
         }
     }
 

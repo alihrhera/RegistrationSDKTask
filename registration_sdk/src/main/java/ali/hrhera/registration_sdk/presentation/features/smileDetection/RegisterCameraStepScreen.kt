@@ -48,9 +48,10 @@ fun RegisterCameraStepScreen(userId: Int, navController: NavController) {
 
     when (viewmodel.uiStat.value) {
         is RegisterCameraUiState.Success -> {
+            viewmodel.updateEvent(RegisterCameraUiState.NONE)
             navController.navigate("result/$userId")
-            viewmodel.updateEvent(RegisterCameraUiState.Idel)
         }
+
         is RegisterCameraUiState.Idel -> {
             MainCamera(
                 cameraProviderFuture,
@@ -61,6 +62,8 @@ fun RegisterCameraStepScreen(userId: Int, navController: NavController) {
                 userId
             )
         }
+
+        else -> {}
     }
 
 
