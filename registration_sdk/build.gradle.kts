@@ -94,7 +94,6 @@ dependencies {
 
     // face detection
     implementation(libs.face.detection)
-    implementation(libs.play.services.mlkit.face.detection)
     ////////// end of camera
 
 

@@ -83,7 +83,6 @@ camerax-extension = { group = "androidx.camera", name = "camera-extensions", ver
 #end of cameraX
 
 # mlkit
-play-services-mlkit-face-detection = { group = "com.google.android.gms", name = "play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
 face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetection" }
 #end of mlkit
 
