@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.registration_form
+package ali.hrhera.registration_sdk.presentation.features.registration_form
 
 
 data class RegisterFormUiState(

@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.registration_form
+package ali.hrhera.registration_sdk.presentation.features.registration_form
 
 import ali.hrhera.registration_sdk.presentation.ui.component.ButtonState
 import ali.hrhera.registration_sdk.presentation.ui.component.ButtonWithAnimation

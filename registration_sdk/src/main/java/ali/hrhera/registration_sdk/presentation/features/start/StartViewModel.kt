@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.start
+package ali.hrhera.registration_sdk.presentation.features.start
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel

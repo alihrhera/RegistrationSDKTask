@@ -1,8 +1,7 @@
-package ali.hrhera.registration_sdk.presentation.start
+package ali.hrhera.registration_sdk.presentation.features.start
 
 import android.Manifest.permission.CAMERA
 import android.app.Activity
-import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material3.AlertDialog
