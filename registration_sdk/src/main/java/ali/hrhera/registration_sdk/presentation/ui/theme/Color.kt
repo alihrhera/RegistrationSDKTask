@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.ui.theme
+package ali.hrhera.registration_sdk.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,6 +1,5 @@
-package ali.hrhera.registration_sdk.ui.theme
+package ali.hrhera.registration_sdk.presentation.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
