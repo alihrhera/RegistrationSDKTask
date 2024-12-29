@@ -6,7 +6,7 @@ RegisterTask is an Android project built with Jetpack Compose that includes a fe
 ---
 
 
-  <img src="https://github.com/user-attachments/assets/36e34b5a-e22f-4050-89e3-e09b348b03d3" alt="Example Image" width="210" height="450">
+  <img src="assets/app.gif" alt="app use case" width="210" height="450">
 
 
 ## Features
@@ -19,14 +19,14 @@ RegisterTask is an Android project built with Jetpack Compose that includes a fe
   
 - **App Home**:
   - App Home
-    - <img src="https://github.com/user-attachments/assets/2fc33f0b-9efd-461a-b82d-acbecbb364ca" alt="Example Image" width="100" height="200">
+    - <img src="assets/main-screen.png" alt="main-screen" width="100" height="200">
   - **SDK**
     - Ask for Camera Permissions
-      - <img src="https://github.com/user-attachments/assets/f12ae361-e297-4a9c-a793-f3ab1eb3c3f3" alt="Example Image" width="100" height="200">
+      - <img src="assets/start.png" alt="start" width="100" height="200">
     - Register form
-      - <img src="https://github.com/user-attachments/assets/7c6db2ee-77aa-4de5-8953-89375b15ad53" alt="Example Image" width="100" height="200">
+      - <img src="assets/form.png" alt="form" width="100" height="200">
     - camera for smile detactor
-      - <img src="https://github.com/user-attachments/assets/b198ac29-b537-4187-9e38-e14e2ff0ba7b" alt="Example Image" width="100" height="200">
+      - <img src="assets/camera.png" alt="camera" width="100" height="200">
   
 - **Clean Architecture**:
   - Implements the MVVM design pattern for scalability and maintainability.
