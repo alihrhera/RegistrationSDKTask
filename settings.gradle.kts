@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "RegistrationSDKTask"
 include(":app")
-include(":registrationsdk")
+include(":registration_sdk")

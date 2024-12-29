@@ -51,6 +51,9 @@ android {
 
 dependencies {
 
+    implementation(project(":registration_sdk"))
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
