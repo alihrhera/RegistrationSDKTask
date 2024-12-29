@@ -9,8 +9,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import ali.hrhera.registration_sdk.presentation.ui.theme.RegistrationSDKTaskTheme
+import androidx.activity.OnBackPressedCallback
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.lifecycle.HiltViewModel
 
 
 @AndroidEntryPoint
@@ -21,10 +21,18 @@ class SdkMainActivity : ComponentActivity() {
         setContent {
             RegistrationSDKTaskTheme(darkTheme = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AppRouts(paddingValues = innerPadding)
+                    AppRouts( paddingValues = innerPadding)
                 }
             }
         }
+
+        onBackPressedDispatcher.addCallback(object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                setResult(RESULT_CANCELED)
+                finish()
+            }
+
+        })
     }
 }
 
