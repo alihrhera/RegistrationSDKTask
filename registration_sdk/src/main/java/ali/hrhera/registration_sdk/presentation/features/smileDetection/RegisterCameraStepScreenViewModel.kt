@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.smileDetection
+package ali.hrhera.registration_sdk.presentation.features.smileDetection
 
 import ali.hrhera.registration_sdk.domain.usecase.faceDetection.FaceDetectionUseCase
 import ali.hrhera.registration_sdk.domain.usecase.saveUserPhoto.SaveUserPhoto

@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.result
+package ali.hrhera.registration_sdk.presentation.features.result
 
 import ali.hrhera.registration_sdk.domain.usecase.result.ResultUseCase
 import ali.hrhera.registration_sdk.util.BaseResponse

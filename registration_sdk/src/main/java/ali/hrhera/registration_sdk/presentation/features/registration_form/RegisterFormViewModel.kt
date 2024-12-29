@@ -1,8 +1,7 @@
-package ali.hrhera.registration_sdk.presentation.registration_form
+package ali.hrhera.registration_sdk.presentation.features.registration_form
 
 import ali.hrhera.registration_sdk.domain.model.User
 import ali.hrhera.registration_sdk.domain.usecase.registerFirstStep.RegisterStepOneUseCase
-import ali.hrhera.registration_sdk.presentation.registration_form.RegisterFormUiState
 import ali.hrhera.registration_sdk.util.BaseResponse
 import ali.hrhera.registration_sdk.util.errors.EmailValidationError
 import ali.hrhera.registration_sdk.util.errors.NameValidationError

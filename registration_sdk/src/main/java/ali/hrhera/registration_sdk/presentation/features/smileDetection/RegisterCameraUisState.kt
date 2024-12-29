@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.smileDetection
+package ali.hrhera.registration_sdk.presentation.features.smileDetection
 
 
 sealed class RegisterCameraUiState {

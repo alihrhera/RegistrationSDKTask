@@ -1,4 +1,4 @@
-package ali.hrhera.registration_sdk.presentation.result
+package ali.hrhera.registration_sdk.presentation.features.result
 
 import ali.hrhera.registration_sdk.domain.model.User
 import ali.hrhera.registration_sdk.presentation.ui.component.VerticalSpace

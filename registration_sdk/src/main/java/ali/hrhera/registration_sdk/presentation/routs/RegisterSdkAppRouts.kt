@@ -1,9 +1,9 @@
 package ali.hrhera.registration_sdk.presentation.routs
 
-import ali.hrhera.registration_sdk.presentation.registration_form.RegisterScreen
-import ali.hrhera.registration_sdk.presentation.smileDetection.RegisterCameraStepScreen
-import ali.hrhera.registration_sdk.presentation.result.ResultScreen
-import ali.hrhera.registration_sdk.presentation.start.MainScreen
+import ali.hrhera.registration_sdk.presentation.features.registration_form.RegisterScreen
+import ali.hrhera.registration_sdk.presentation.features.result.ResultScreen
+import ali.hrhera.registration_sdk.presentation.features.smileDetection.RegisterCameraStepScreen
+import ali.hrhera.registration_sdk.presentation.features.start.MainScreen
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -34,34 +34,17 @@ fun AppRouts(paddingValues: PaddingValues) {
                 RegisterScreen(navControl)
             }
             composable("cameraStep/{userId}") {
-
+                val userId = it.arguments?.getString("userId", "0")?.toInt() ?: 0
+                RegisterCameraStepScreen(userId, navControl)
 
             }
             composable("result/{userId}") {
-
+                val userId = it.arguments?.getString("userId", "0")?.toInt() ?: 0
+                ResultScreen(userId)
             }
         }
     }
-    val context = LocalContext.current as? Activity
-    PressBackHandler(navControl, context)
 
 }
 
 
-@Composable
-fun PressBackHandler(navControl: NavController, context: Activity?) {
-    val backCallback =
-        object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (navControl.currentDestination?.route == "start"
-                    ||
-                    navControl.currentDestination?.route == "result"
-                ) {
-                    context?.setResult(Activity.RESULT_CANCELED)
-                    context?.finish()
-                } else navControl.popBackStack()
-            }
-        }
-    val activity = (LocalContext.current as? ComponentActivity)
-    if (activity is ComponentActivity) activity.onBackPressedDispatcher.addCallback(backCallback)
-}
