@@ -4,6 +4,8 @@ import ali.hrhera.registration_sdk.presentation.features.registration_form.Regis
 import ali.hrhera.registration_sdk.presentation.features.result.ResultScreen
 import ali.hrhera.registration_sdk.presentation.features.smileDetection.RegisterCameraStepScreen
 import ali.hrhera.registration_sdk.presentation.features.start.MainScreen
+import androidx.compose.animation.AnimatedContentTransitionScope
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -17,6 +19,7 @@ import androidx.navigation.compose.rememberNavController
 
 
 val LocalNavController = compositionLocalOf<NavController> { error("No NavController found!") }
+const val SCREEN_TRANSITION_MILLIS = 500
 
 @Composable
 fun AppRouts(paddingValues: PaddingValues) {
@@ -25,7 +28,36 @@ fun AppRouts(paddingValues: PaddingValues) {
     CompositionLocalProvider(LocalNavController provides navControl) {
         NavHost(
             navController = navControl,
-            startDestination = "start", modifier = Modifier.padding(paddingValues)
+            startDestination = "start", modifier = Modifier.padding(paddingValues),
+            enterTransition = {
+                slideIntoContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Start, tween(
+                        SCREEN_TRANSITION_MILLIS
+                    )
+                )
+            },
+            exitTransition = {
+                slideOutOfContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Start, tween(
+                        SCREEN_TRANSITION_MILLIS
+                    )
+                )
+            },
+            popEnterTransition = {
+                slideIntoContainer(
+                    AnimatedContentTransitionScope.SlideDirection.End, tween(
+                        SCREEN_TRANSITION_MILLIS
+                    )
+                )
+            },
+            popExitTransition = {
+                slideOutOfContainer(
+                    AnimatedContentTransitionScope.SlideDirection.End, tween(
+                        SCREEN_TRANSITION_MILLIS
+                    )
+                )
+            }
+
         ) {
             composable("start") {
                 MainScreen(navControl)
