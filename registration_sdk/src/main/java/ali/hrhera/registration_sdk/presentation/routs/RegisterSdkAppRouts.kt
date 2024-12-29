@@ -1,5 +1,6 @@
 package ali.hrhera.registration_sdk.presentation.routs
 
+import ali.hrhera.registration_sdk.presentation.registration_form.RegisterScreen
 import android.app.Activity
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
@@ -31,7 +32,7 @@ fun AppRouts(paddingValues: PaddingValues) {
 
             }
             composable("registerForm") {
-
+                RegisterScreen(navControl)
             }
             composable("cameraStep/{userId}") {
 
