@@ -38,6 +38,7 @@ RegisterTask is an Android project built with Jetpack Compose that includes a fe
 - **API Level**: Supports Android 8.0 (API 26) and above.
 
 ## used libs :
+  - [google mlkit face-detection](https://developers.google.com/ml-kit/vision/face-detection)
   - [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for di
   - [Coil](https://coil-kt.github.io/coil/)  for images loading
   - [Room](https://developer.android.com/training/data-storage/room) for local db
