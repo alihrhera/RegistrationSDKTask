@@ -17,13 +17,8 @@
             android:name=".presentation.SdkMainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.RegistrationSDKTask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.RegistrationSDKTask"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
