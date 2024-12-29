@@ -1,6 +1,7 @@
 package ali.hrhera.registration_sdk.presentation.routs
 
 import ali.hrhera.registration_sdk.presentation.registration_form.RegisterScreen
+import ali.hrhera.registration_sdk.presentation.start.MainScreen
 import android.app.Activity
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
@@ -29,7 +30,7 @@ fun AppRouts(paddingValues: PaddingValues) {
             startDestination = "start", modifier = Modifier.padding(paddingValues)
         ) {
             composable("start") {
-
+                MainScreen(navControl)
             }
             composable("registerForm") {
                 RegisterScreen(navControl)
