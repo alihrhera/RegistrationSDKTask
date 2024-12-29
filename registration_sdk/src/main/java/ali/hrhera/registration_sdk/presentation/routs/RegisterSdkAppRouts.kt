@@ -1,18 +1,15 @@
 package ali.hrhera.registration_sdk.presentation.routs
 
 import ali.hrhera.registration_sdk.presentation.registration_form.RegisterScreen
+import ali.hrhera.registration_sdk.presentation.smileDetection.RegisterCameraStepScreen
 import ali.hrhera.registration_sdk.presentation.result.ResultScreen
 import ali.hrhera.registration_sdk.presentation.start.MainScreen
-import android.app.Activity
-import androidx.activity.ComponentActivity
-import androidx.activity.OnBackPressedCallback
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -41,8 +38,7 @@ fun AppRouts(paddingValues: PaddingValues) {
 
             }
             composable("result/{userId}") {
-                val userId = it.arguments?.getString("userId", "0")?.toInt() ?: 0
-                ResultScreen(userId)
+
             }
         }
     }

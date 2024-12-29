@@ -85,7 +85,18 @@ dependencies {
     implementation(libs.accompanist.permissions)
     ////////// end of permissions
 
-    
+    /*camera*/
+    implementation(libs.camerax.camera)
+    implementation(libs.camerax.lifecycle)
+    implementation(libs.camerax.extension)
+    implementation(libs.camerax.view)
+    ////////// end of camera
+
+    // face detection
+    implementation(libs.face.detection)
+    implementation(libs.play.services.mlkit.face.detection)
+    ////////// end of camera
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
